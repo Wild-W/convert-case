@@ -1,5 +1,5 @@
 {
-  "name": "convert-case",
+  "name": "node-convert-case",
   "version": "0.1.0",
   "description": "Bindings for the convert_case Rust crate.",
   "main": "main.js",

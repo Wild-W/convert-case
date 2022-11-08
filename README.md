@@ -1,4 +1,4 @@
-# Convert-Case
+# Node-Convert-Case
 
 Node.js bindings for [convert_case](https://docs.rs/convert_case/latest/convert_case/). This project was created using [neon](https://neon-bindings.com/).
 
@@ -6,14 +6,14 @@ Node.js bindings for [convert_case](https://docs.rs/convert_case/latest/convert_
 ## Installing
 
 ```sh
-npm install convert-case
+npm install node-convert-case
 ```
 
 
 ## Usage
 
 ```ts
-import { Case, Boundary, Pattern, CS } from "convert-case";
+import { Case, Boundary, Pattern, CS } from "node-convert-case";
 
 // Using toCase
 let marioTitle: string = CS("super_mario_64").toCase(Case.Title).toString();
@@ -43,7 +43,7 @@ The included declaration file has extensive documentation on how to use just abo
 
 ## Cases
 
-This is list of cases that convert-case supports.  Some cases are simply aliases of others.
+This is list of cases that node-convert-case supports.  Some cases are simply aliases of others.
 
 | Case | Example |
 | ---- | ------- |
@@ -69,7 +69,7 @@ This is list of cases that convert-case supports.  Some cases are simply aliases
 
 ## Contributing/Modifying
 
-Building convert-case requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
+Building node-convert-case requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
 
 First, download this repo's source code, then you can install the project with npm. In the project directory, run:
 

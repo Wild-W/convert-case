@@ -520,7 +520,7 @@ declare enum Pattern {
     /**
      * Lowercase patterns make all words lowercase.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("case" === CS("Case").mutate({pattern: Pattern.Lowercase}).toString());
      * ```
@@ -529,7 +529,7 @@ declare enum Pattern {
     /**
      * Uppercase patterns make all words uppercase.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("CASE" === CS("Case").mutate({pattern: Pattern.Uppercase}).toString());
      * ```
@@ -539,7 +539,7 @@ declare enum Pattern {
      * Capital patterns makes the first letter of each word uppercase
      * and the remaining letters of each word lowercase.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("Case" === CS("case").mutate({pattern: Pattern.Capital}).toString());
      * ```
@@ -549,7 +549,7 @@ declare enum Pattern {
      * Capital patterns make the first word capitalized and the
      * remaining lowercase.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("Testing string" === CS("testing String").mutate({pattern: Pattern.Sentence, delim: " "}).toString());
      * ```
@@ -559,7 +559,7 @@ declare enum Pattern {
      * Camel patterns make the first word lowercase and the remaining
      * capitalized.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("testingString" === CS("Testing string").mutate({pattern: Pattern.Camel}).toString());
      * ```
@@ -571,7 +571,7 @@ declare enum Pattern {
      * which means the last letter of one word and the first letter of the
      * next will not be the same letter casing.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("tEsTiNg-StRiNg" === CS("Testing string").mutate({pattern: Pattern.Alternating, delim: "-"}).toString());
      * ```
@@ -580,7 +580,7 @@ declare enum Pattern {
     /**
      * Toggle patterns inverse uppercase and lowercase letters
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * assert("cASe" === CS("CasE").mutate({pattern: Pattern.Toggle}).toString());
      * ```
@@ -591,7 +591,7 @@ declare enum Pattern {
      * uniformly randomly.  This example will not pass the assertion due to randomness, but it used as an
      * example of what output is possible.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * // Could be "HElLo", "hEllO", etc
      * console.log(CS("hello").mutate({pattern: Pattern.Random}).toString());
@@ -606,7 +606,7 @@ declare enum Pattern {
      * is that there will never be three consecutive letters that are all lowercase
      * or all uppercase.
      * ```
-     * import { CS, Pattern } from "convert-case";
+     * import { CS, Pattern } from "node-convert-case";
      *
      * // Could be "cONveRSioN", "cOnVeRSiOn" etc
      * console.log(CS("CONVERSION").mutate({pattern: Pattern.PseudoRandom}).toString());

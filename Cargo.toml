@@ -1,5 +1,5 @@
 [package]
-name = "convert-case"
+name = "node-convert-case"
 version = "0.1.0"
 authors = ["WildW"]
 license = "MIT"
