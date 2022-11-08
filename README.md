@@ -2,11 +2,13 @@
 
 Node.js bindings for [convert_case](https://docs.rs/convert_case/latest/convert_case/). This project was created using [neon](https://neon-bindings.com/).
 
+
 ## Installing
 
 ```sh
 npm install convert-case
 ```
+
 
 ## Usage
 
@@ -38,6 +40,7 @@ assert("567n-9854g-321k" === characterCode);
 
 The included declaration file has extensive documentation on how to use just about everything included, this is just a quick example. For more examples, check out the [tests](./tests/all.test.ts).
 
+
 ## Cases
 
 This is list of cases that convert-case supports.  Some cases are simply aliases of others.
@@ -63,6 +66,7 @@ This is list of cases that convert-case supports.  Some cases are simply aliases
 | Random | MY vaRiabLe nAME |
 | PseudoRandom | mY VaRiAblE nAMe |
 
+
 ## Contributing/Modifying
 
 Building convert-case requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
@@ -80,14 +84,13 @@ To build after you've already installed, run:
 ```sh
 npm run build
 ```
+This command builds and copies the built library into `./index.node`.
 
 To run tests:
 
 ```sh
 npm test
 ```
-
-This command uses the [cargo-cp-artifact](https://github.com/neon-bindings/cargo-cp-artifact) utility to run the Rust build and copy the built library into `./index.node`.
 
 
 ## Learn More
