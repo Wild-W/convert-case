@@ -10,6 +10,10 @@
     "install": "npm run build-release",
     "test": "jest"
   },
+  "repository": {
+    "url": "https://github.com/Wild-W/convert-case",
+    "type": "git"
+  },
   "author": "WildW",
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +26,7 @@
   },
   "keywords": [
     "case",
-    "string"
+    "string",
+    "convert-case"
   ]
 }

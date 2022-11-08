@@ -342,33 +342,21 @@ declare enum Boundary {
     /**
      * Splits on `-`, consuming the character on segmentation.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::Hyphen],
-     *     Boundary::list_from("-")
-     * );
+     * assert([Boundary.Hyphen] === Boundary.list_from("-"));
      * ```
      */
     Hyphen = 0,
     /**
      * Splits on `_`, consuming the character on segmentation.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::Underscore],
-     *     Boundary::list_from("_")
-     * );
+     * assert([Boundary.Underscore] === Boundary.list_from("_"));
      * ```
      */
     Underscore = 1,
     /**
      * Splits on space, consuming the character on segmentation.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::Space],
-     *     Boundary::list_from(" ")
-     * );
+     * assert([Boundary.Space] === Boundary.list_from(" "));
      * ```
      */
     Space = 2,
@@ -376,66 +364,42 @@ declare enum Boundary {
      * Splits where an uppercase letter is followed by a lowercase letter.  This is seldom used,
      * and is not included in the {@link Boundary.defaults defaults}.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::UpperLower],
-     *     Boundary::list_from("Aa")
-     * );
+     * assert([Boundary.UpperLower] === Boundary.list_from("Aa"));
      * ```
      */
     UpperLower = 3,
     /**
      * Splits where a lowercase letter is followed by an uppercase letter.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::LowerUpper],
-     *     Boundary::list_from("aA")
-     * );
+     * assert([Boundary.LowerUpper] === Boundary.list_from("aA"));
      * ```
      */
     LowerUpper = 4,
     /**
      * Splits where digit is followed by an uppercase letter.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::DigitUpper],
-     *     Boundary::list_from("1A")
-     * );
+     * assert([Boundary.DigitUpper] === Boundary.list_from("1A"));
      * ```
      */
     DigitUpper = 5,
     /**
      * Splits where an uppercase letter is followed by a digit.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::UpperDigit],
-     *     Boundary::list_from("A1")
-     * );
+     * assert([Boundary.UpperDigit] === Boundary.list_from("A1"));
      * ```
      */
     UpperDigit = 6,
     /**
      * Splits where digit is followed by a lowercase letter.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::DigitLower],
-     *     Boundary::list_from("1a")
-     * );
+     * assert([Boundary.DigitLower] === Boundary.list_from("1a"));
      * ```
      */
     DigitLower = 7,
     /**
      * Splits where a lowercase letter is followed by a digit.
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::LowerDigit],
-     *     Boundary::list_from("a1")
-     * );
+     * assert([Boundary.LowerDigit] === Boundary.list_from("a1"));
      * ```
      */
     LowerDigit = 8,
@@ -444,11 +408,7 @@ declare enum Boundary {
      * The word boundary is between the two uppercase letters.  For example, "HTTPRequest"
      * would have an acronym boundary identified at "PRe" and split into "HTTP" and "Request".
      * ```
-     * use convert_case::Boundary;
-     * assert_eq!(
-     *     vec![Boundary::Acronym],
-     *     Boundary::list_from("AAa")
-     * );
+     * assert([Boundary.Acronym] === Boundary.list_from("AAa"));
      * ```
      */
     Acronym = 9
