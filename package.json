@@ -1,7 +1,7 @@
 {
   "name": "convert-case",
   "version": "0.1.0",
-  "description": "Bindings for parts of the convert_case Rust crate.",
+  "description": "Bindings for the convert_case Rust crate.",
   "main": "main.js",
   "scripts": {
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
