@@ -38,6 +38,31 @@ assert("567n-9854g-321k" === characterCode);
 
 The included declaration file has extensive documentation on how to use just about everything included, this is just a quick example. For more examples, check out the [tests](./tests/all.test.ts).
 
+## Cases
+
+This is list of cases that convert-case supports.  Some cases are simply aliases of others.
+
+| Case | Example |
+| ---- | ------- |
+| Upper | MY VARIABLE NAME |
+| Lower | my variable name |
+| Title | My Variable Name |
+| Toggle | mY vARIABLE nAME |
+| Alternating | mY vArIaBlE nAmE |
+| Camel | myVariableName |
+| Pascal | MyVariableName |
+| UpperCamel | MyVariableName |
+| Snake | my\_variable\_name |
+| UpperSnake | MY\_VARIABLE\_NAME |
+| ScreamingSnake | MY\_VARIABLE\_NAME |
+| Kebab | my-variable-name |
+| Cobol | MY-VARIABLE-NAME |
+| Train | My-Variable-Name |
+| Flat | myvariablename |
+| UpperFlat | MYVARIABLENAME |
+| Random | MY vaRiabLe nAME |
+| PseudoRandom | mY VaRiAblE nAMe |
+
 ## Contributing/Modifying
 
 Building convert-case requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
