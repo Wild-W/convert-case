@@ -77,9 +77,9 @@ First, download this repo's source code, then you can install the project with n
 npm install
 ```
 
-This fully installs the project, including installing any dependencies and running the build.
+This fully installs the project, including installing any dependencies.
 
-To build after you've already installed, run:
+To build, run:
 
 ```sh
 npm run build
